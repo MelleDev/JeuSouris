@@ -21,6 +21,15 @@
 			p.left = 100;
 			$('#target').offset(p);
 			
+			$('#target').click(function() {
+				x = Math.floor(Math.random()*largeur);
+				y = Math.floor(Math.random()*hauteur);
+				var p = $('#target').offset();
+				p.top = y;
+				p.left = x;
+				$('#target').offset(p);
+			});
+			
 		});
 	</script>
 	
