@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Jeu Souris JQuery</title>
+    <link rel="stylesheet" type="text/css" href="feuille-de-styles.css">
+  </head>
+  <body>
+  
+  <img id="target" src="petitchat.jpg"/>
+
+    <script src="jquery-3.1.1.js"></script>
+	<script>
+		$ (function() {
+			
+			var largeur = ($(window).width()) - 50;
+			var hauteur = ($(window).height()) - 50;
+			
+			var p = $('#target').offset();
+			p.top = 100;
+			p.left = 100;
+			$('#target').offset(p);
+			
+		});
+	</script>
+	
+  </body>
+</html>
