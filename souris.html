@@ -18,19 +18,19 @@
 			var hauteur = ($(window).height()) - 50;
 			
 			// Affichage de la première image en (100,100)
-			var p = $('#target').offset();
-			p.top = 100;
-			p.left = 100;
-			$('#target').offset(p);
+			var image = $('#target').offset();
+			image.top = 100;
+			image.left = 100;
+			$('#target').offset(image);
 			
 			// Gestion du clic et déplacement de l'image
 			$('#target').click(function() {
 				x = Math.floor(Math.random()*largeur);
 				y = Math.floor(Math.random()*hauteur);
-				var p = $('#target').offset();
-				p.top = y;
-				p.left = x;
-				$('#target').offset(p);
+				var deplacement = $('#target').offset();
+				deplacement.top = y;
+				deplacement.left = x;
+				$('#target').offset(deplacement);
 			});
 			
 		});
